@@ -1,0 +1,16 @@
+.cal-app{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+}
+
+.cal-body{
+    flex-grow: 1 ;
+    background-color: rgb(127, 184, 127);
+}
+
+.cal-header{
+    flex-basis: 50px;
+    background-color:r rgb(248, 185, 91);
+}

@@ -1,17 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import { createGlobalStyle } from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    background: #e9ecef;
-  }
-`;
+import RenderHeader from './src/RenderHeader';
+import RenderBody from './src/RenderBody';
+import './src/cal.css';
 
 function App() {
   return (
     <div>
-      <GlobalStyle />
+      <div className='cal-app'>
+        <RenderHeader></RenderHeader>
+        <RenderBody></RenderBody>
+      </div>
     </div>
   );
 }
