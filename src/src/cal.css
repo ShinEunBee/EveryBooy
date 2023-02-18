@@ -34,6 +34,7 @@
     background: linear-gradient(white, lightblue);
     box-shadow: 3px 3px gray;
     font-family: 'DOSGothic';
+    flex-direction: column;
 }
 
 .cal-header{
