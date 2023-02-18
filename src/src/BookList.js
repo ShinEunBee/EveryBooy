@@ -41,7 +41,7 @@ const BookList = () => {
                     value={text}
                     onChange={onChange}
                     ref={inputName} />
-                    <button type="submit">확인</button>
+                    <button type="submit" className="btn_style">확인</button>
             </form>
             <hr />
             <ul>{input_list}</ul>
