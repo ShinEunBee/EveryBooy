@@ -13,9 +13,8 @@ function RenderBody() {
             <Calendar onChange={onChange} value={value} />
             <div className="cal-body">
                 {moment(value).format("YYYY년 MM월 DD일")}
-                
             </div>
-            <BookList></BookList>
+            <BookList className="cal-body"></BookList>
         </div>
     );
 }
