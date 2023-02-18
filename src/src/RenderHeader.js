@@ -6,7 +6,7 @@ function renderHeader() {
      
         return(
             <div className="cal-header">
-                내용
+                BooY!BooY!BooY!BooY!BooY!
             </div>
         )
     

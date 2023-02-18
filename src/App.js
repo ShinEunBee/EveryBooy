@@ -6,8 +6,8 @@ import './src/cal.css';
 
 function App() {
   return (
-    <div>
-      <div className='cal-app'>
+    <div className='cal-app'>
+      <div>
         <RenderHeader></RenderHeader>
         <RenderBody></RenderBody>
       </div>
