@@ -1,6 +1,6 @@
 import React , {useState, useRef} from "react";
 
-const BookList = () => {
+const BookList = (props) => {
 
         const [text, setText] = useState('');
         const [lists, setLists] = useState([]);
@@ -24,11 +24,11 @@ const BookList = () => {
         };
 
         const input_list = lists.map((list) => (
-            <li
-            key = {list.id}>
-                {list.text}
-            </li>
+            list.text
         ));
+
+        localStorage.setItem('list', input_list);
+        const list = localStorage.getItem('list');
 
         return (
           <div>
@@ -44,8 +44,8 @@ const BookList = () => {
                     <button type="submit" className="btn_style">확인</button>
             </form>
             <hr />
-            <ul>{input_list}</ul>
-            <h2>{input_list.length} 권의 책을 읽었어요.</h2>
+            <h2>{props.day} 에 {input_list.length} 권의 책을 읽었어요.</h2>
+            <h2>{list}</h2>
           </div>  
         );
 

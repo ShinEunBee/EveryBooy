@@ -14,7 +14,7 @@ function RenderBody() {
             <div className="cal-body">
                 {moment(value).format("YYYY년 MM월 DD일")}
             </div>
-            <BookList className="cal-body"></BookList>
+            <BookList className="cal-body" day={moment(value).format("YYYY년 MM월 DD일")}></BookList>
         </div>
     );
 }
