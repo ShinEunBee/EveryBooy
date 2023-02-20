@@ -45,6 +45,7 @@ const BookList = () => {
             </form>
             <hr />
             <ul>{input_list}</ul>
+            <h2>{input_list.length} 권의 책을 읽었어요.</h2>
           </div>  
         );
 
